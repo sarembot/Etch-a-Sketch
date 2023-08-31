@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 25vw;
+    
+}
+
+.square {
+    outline: 1px solid black;
+    width: 25%;
+    padding-top: 25%; /*sets the height to match the width*/
+    cursor: pointer;
+}
