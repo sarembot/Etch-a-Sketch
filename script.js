@@ -1,4 +1,4 @@
-const gridDivs = 16;
+const gridDivs = 256;
 
 const container = document.getElementById("container");
 
@@ -10,3 +10,16 @@ for (i = 0; i < gridDivs; i++){
 
     container.appendChild(newDiv);
 }
+
+const squareDivs = document.querySelectorAll('.square');
+
+squareDivs.forEach(function(squareDiv){
+
+    squareDiv.addEventListener('mouseover', function(){
+    squareDiv.style.backgroundColor = 'black';
+    });
+
+    squareDiv.addEventListener('mouseout', function(){
+    squareDiv.style.backgroundColor = 'white';
+    })
+})
