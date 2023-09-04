@@ -1,21 +1,61 @@
 * {
     box-sizing: border-box;
+    
 }
 
+body {
+    background-color: #ccc;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
     margin: 0 27vw;
     border: 5px solid black;
     
+    
+}
+
+#container {
+    background-color: white;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10%;
+    
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+:root {
+    --grid-size: 16;
 }
 
 .square {
-    width: 6.25%;
-    padding-top: 6.25%; /*sets the height to match the width*/
+    width: calc(100% / var(--grid-size));
+    padding-top: calc(100% / var(--grid-size)); /*sets the height to match the width*/
     cursor: pointer;
 }
 
-p, h1 {
+.square.hovered {
+    background-color: black;
+}
+
+.square.unhovered {
+    background-color: white;
+}
+
+.top > h1, button, span {
+    background-color: #ccc;
     text-align: center;
+    padding: 8px;
 }
