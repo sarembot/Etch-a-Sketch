@@ -82,11 +82,3 @@ button.addEventListener('click', function(){
     promptForNumber()
     
 });
-
-//I have to change CSS I think. And find a way to make the grid flexible so it doesn't turn into a long vertical rectangle
-
-//Hover doesn't work after input is received from user
-
-//Something wrong with height of .square, when user input received it gets smaller, probably linked to first comment
-
-//must figure out way to make it align baby
